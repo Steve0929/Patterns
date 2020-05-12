@@ -12,16 +12,11 @@ public class Patterns {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        RestaurantFactoryProducer Myres = new RestaurantFactoryProducer();
+        RestaurantAbstractFactory factory = Myres.getRestaurantAbstractFactory(1);
+        factory.getFastFood("hamburguer");
+         factory.getDrink("soda");
     }
-        public FastFood getFastFood(String type){
-	    switch(type){
-	        case "hamburguer": return new Hamburger();
-	        case "sandwich": return new Sandwich();
-	        case "hotdog": return new Hotdog();
-	        default: return  null;
-	    }
-	    
-	}
    
     
 }
