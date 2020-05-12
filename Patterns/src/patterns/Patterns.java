@@ -15,7 +15,7 @@ public class Patterns {
         RestaurantFactoryProducer Myres = new RestaurantFactoryProducer();
         RestaurantAbstractFactory factory = Myres.getRestaurantAbstractFactory(1);
         factory.getFastFood("hamburguer");
-         factory.getDrink("soda");
+        factory.getDrink("soda");
     }
    
     
