@@ -12,10 +12,16 @@ public class Patterns {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        RestaurantFactoryProducer Myres = new RestaurantFactoryProducer();
-        RestaurantAbstractFactory factory = Myres.getRestaurantAbstractFactory(1);
-        factory.getFastFood("hamburguer");
-        factory.getDrink("soda");
+        RestaurantFactoryProducer Producer = new RestaurantFactoryProducer();
+        //Comidas
+        RestaurantAbstractFactory factory = Producer.getRestaurantAbstractFactory(1);
+        System.out.println(factory.getFastFood("hamburguer"));
+        System.out.println(factory.getDrink("soda"));
+        
+        //Pizzeria
+        RestaurantAbstractFactory MyPizzaRes = Producer.getRestaurantAbstractFactory(2);
+        System.out.println(MyPizzaRes.getFastFood("pizza"));
+        System.out.println(MyPizzaRes.getDrink("beer"));
     }
    
     
